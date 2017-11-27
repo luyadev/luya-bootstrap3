@@ -1,2 +1,7 @@
-# luya-bootstrap3
-LUYA bootstrap3 specific content
+# LUYA Bootstrap 3
+
+Bootstrap 3 related content.
+
++ blocks
++ widgets
++ ...
