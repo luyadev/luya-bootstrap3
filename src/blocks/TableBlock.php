@@ -1,11 +1,12 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
 use luya\TagParser;
-use luya\generic\Module;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\bootstrap3\blockgroups\Bootstrap3Group;
 
 /**
  * Table Block.
@@ -13,7 +14,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class TableBlock extends BaseGenericBlock
+final class TableBlock extends BaseBootstrap3Block
 {
     /**
      * @inheritdoc
@@ -33,6 +34,11 @@ final class TableBlock extends BaseGenericBlock
         return Module::t('block_table_name');
     }
 
+    public function blockGroup()
+    {
+        return Bootstrap3Group::class;
+    }
+    
     /**
      * @inheritdoc
      */

@@ -1,11 +1,11 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
-use luya\generic\Module;
-use luya\generic\blockgroups\MediaGroup;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\cms\frontend\blockgroups\MediaGroup;
 
 /**
  * Embed YouTube and Vimeo video Block.
@@ -13,7 +13,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class VideoBlock extends BaseGenericBlock
+final class VideoBlock extends BaseBootstrap3Block
 {
     const PROVIDER_YOUTUBE = 'youtube';
     

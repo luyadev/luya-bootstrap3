@@ -1,9 +1,8 @@
 <?php
 
-namespace luya\generic\blockgroups;
+namespace luya\bootstrap3\blockgroups;
 
 use luya\cms\base\BlockGroup;
-use luya\generic\Module;
 
 /**
  * Text Block Group.
@@ -13,16 +12,16 @@ use luya\generic\Module;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-class TextGroup extends BlockGroup
+class Bootstrap3Group extends BlockGroup
 {
     public function identifier()
     {
-        return 'text-group';
+        return 'bootstrap3';
     }
     
     public function label()
     {
-        return Module::t('block_group_text_elements');
+        return 'Bootstrap 3';
     }
     
     public function getPosition()

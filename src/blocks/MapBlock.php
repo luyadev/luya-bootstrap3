@@ -1,10 +1,11 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
-use luya\generic\Module;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\bootstrap3\blockgroups\Bootstrap3Group;
 
 /**
  * Google Maps Block.
@@ -12,7 +13,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class MapBlock extends BaseGenericBlock
+final class MapBlock extends BaseBootstrap3Block
 {
     /**
      * @inheritdoc
@@ -30,6 +31,11 @@ final class MapBlock extends BaseGenericBlock
     public function name()
     {
         return Module::t('block_map_name');
+    }
+    
+    public function blockGroup()
+    {
+        return Bootstrap3Group::class;
     }
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace luya\generic;
+namespace luya\bootstrap3;
 
 use luya\cms\base\PhpBlock;
 
-abstract class BaseGenericBlock extends PhpBlock
+abstract class BaseBootstrap3Block extends PhpBlock
 {
     public function getViewPath()
     {

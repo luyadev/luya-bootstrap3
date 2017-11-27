@@ -1,11 +1,12 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
-use luya\generic\Module;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
 use luya\cms\injectors\LinkInjector;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\bootstrap3\blockgroups\Bootstrap3Group;
 
 /**
  * Simple button element with a link function
@@ -13,7 +14,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class LinkButtonBlock extends BaseGenericBlock
+final class LinkButtonBlock extends BaseBootstrap3Block
 {
     /**
      * @inheritdoc
@@ -33,6 +34,11 @@ final class LinkButtonBlock extends BaseGenericBlock
         return Module::t('block_link_button_name');
     }
 
+    public function blockGroup()
+    {
+        return Bootstrap3Group::class;
+    }
+    
     /**
      * @inheritdoc
      */

@@ -1,13 +1,14 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
 use Yii;
 use yii\helpers\Html;
 use luya\helpers\Url;
-use luya\generic\Module;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\bootstrap3\blockgroups\Bootstrap3Group;
 
 /**
  * Form generation Block.
@@ -15,7 +16,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class FormBlock extends BaseGenericBlock
+final class FormBlock extends BaseBootstrap3Block
 {
     public $module = 'cms';
 
@@ -42,6 +43,11 @@ final class FormBlock extends BaseGenericBlock
     public $defaultSendSuccess = 'Vielen Dank! Wir werden uns mit Ihnen in Verbindung setzen.';
 
     public $defaultMailSubject = 'Kontaktanfrage';
+    
+    public function blockGroup()
+    {
+        return Bootstrap3Group::class;
+    }
 
     public function name()
     {

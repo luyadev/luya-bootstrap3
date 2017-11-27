@@ -13,12 +13,12 @@
         }
     ],
     "support" : {
-        "issues" : "https://github.com/luyadev/luya-generic/issues"
+        "issues" : "https://github.com/luyadev/luya-bootstrap3/issues"
     },
     "autoload" : {
         "psr-4" : {
-            "luya\\generic\\" : "src/",
-            "luya\\generic\\tests\\" : "tests/"
+            "luya\\bootstrap3\\" : "src/",
+            "luya\\bootstrap3\\tests\\" : "tests/"
         }
     },
     "extra": {

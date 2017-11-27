@@ -1,11 +1,11 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
-use luya\generic\Module;
-use luya\generic\blockgroups\LayoutGroup;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\cms\frontend\blockgroups\LayoutGroup;
 
 /**
  * Layout/Grid Block.
@@ -13,7 +13,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class LayoutBlock extends BaseGenericBlock
+final class LayoutBlock extends BaseBootstrap3Block
 {
     /**
      * @inheritdoc
@@ -101,6 +101,6 @@ final class LayoutBlock extends BaseGenericBlock
      */
     public function blockGroup()
     {
-        return LayoutGroup::className();
+        return LayoutGroup::class;
     }
 }

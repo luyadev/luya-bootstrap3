@@ -1,6 +1,6 @@
 <?php
 
-namespace luya\generic;
+namespace luya\bootstrap3;
 
 use Yii;
 
@@ -19,9 +19,9 @@ class Module extends \luya\base\Module
      */
     public static function onLoad()
     {
-        self::registerTranslation('generic*', static::staticBasePath() . '/messages', [
+        self::registerTranslation('bootstrap3*', static::staticBasePath() . '/messages', [
             'fileMap' => [
-                'generic' => 'generic.php',
+                'bootstrap3' => 'bootstrap3.php',
             ],
         ]);
     }
@@ -35,6 +35,6 @@ class Module extends \luya\base\Module
      */
     public static function t($message, array $params = [])
     {
-        return parent::baseT('generic', $message, $params);
+        return parent::baseT('bootstrap3', $message, $params);
     }
 }

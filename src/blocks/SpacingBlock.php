@@ -1,11 +1,12 @@
 <?php
 
-namespace luya\generic\blocks;
+namespace luya\bootstrap3\blocks;
 
-use luya\generic\Module;
+use luya\bootstrap3\Module;
 use luya\cms\base\PhpBlock;
 use luya\cms\helpers\BlockHelper;
-use luya\generic\BaseGenericBlock;
+use luya\bootstrap3\BaseBootstrap3Block;
+use luya\bootstrap3\blockgroups\Bootstrap3Group;
 
 /**
  * Margin Top/Bottom block with Paragraph.
@@ -13,7 +14,7 @@ use luya\generic\BaseGenericBlock;
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0
  */
-final class SpacingBlock extends BaseGenericBlock
+final class SpacingBlock extends BaseBootstrap3Block
 {
     /**
      * @inheritdoc
@@ -32,6 +33,11 @@ final class SpacingBlock extends BaseGenericBlock
             2 => Module::t('block_spacing_medium_space'),
             3 => Module::t('block_spacing_large_space'),
         ];
+    }
+    
+    public function blockGroup()
+    {
+        return Bootstrap3Group::class;
     }
     
     /**
