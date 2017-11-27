@@ -10,6 +10,7 @@ class FormBlockTest extends Bootstrap3BlockTestCase
     
     public function testEmptyRenderFrontend()
     {
+        $this->assertSame('Form', $this->block->name());
         $this->assertEmpty($this->renderFrontend());
     }
     
