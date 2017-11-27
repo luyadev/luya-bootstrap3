@@ -18,8 +18,6 @@ use luya\bootstrap3\blockgroups\Bootstrap3Group;
  */
 final class FormBlock extends BaseBootstrap3Block
 {
-    public $module = 'cms';
-
     public $defaultNameLabel = 'Name';
     
     public $defaultNamePlaceholder = 'Vor- und Nachname';

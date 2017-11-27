@@ -26,11 +26,6 @@ final class VideoBlock extends BaseBootstrap3Block
     /**
      * @inheritdoc
      */
-    public $module = 'cms';
-
-    /**
-     * @inheritdoc
-     */
     public $cacheEnabled = true;
 
     /**

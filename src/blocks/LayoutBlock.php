@@ -18,11 +18,6 @@ final class LayoutBlock extends BaseBootstrap3Block
     /**
      * @inheritdoc
      */
-    public $module = 'cms';
-
-    /**
-     * @inheritdoc
-     */
     public $isContainer = true;
 
     /**

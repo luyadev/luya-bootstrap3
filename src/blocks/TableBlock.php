@@ -19,11 +19,6 @@ final class TableBlock extends BaseBootstrap3Block
     /**
      * @inheritdoc
      */
-    public $module = 'cms';
-    
-    /**
-     * @inheritdoc
-     */
     public $cacheEnabled = true;
 
     /**

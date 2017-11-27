@@ -19,11 +19,6 @@ final class SpacingBlock extends BaseBootstrap3Block
     /**
      * @inheritdoc
      */
-    public $module = 'cms';
-    
-    /**
-     * @inheritdoc
-     */
     public $cacheEnabled = true;
     
     protected function getSpacings()
