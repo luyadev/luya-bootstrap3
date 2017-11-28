@@ -5,9 +5,7 @@ namespace luya\bootstrap3\blockgroups;
 use luya\cms\base\BlockGroup;
 
 /**
- * Text Block Group.
- *
- * This group belongs to all basic text elements.
+ * Bootstrap 3 Group.
  *
  * @author Basil Suter <basil@nadar.io>
  * @since 1.0.0

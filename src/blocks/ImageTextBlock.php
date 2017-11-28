@@ -5,7 +5,6 @@ namespace luya\bootstrap3\blocks;
 use luya\TagParser;
 use luya\bootstrap3\Module;
 use luya\cms\helpers\BlockHelper;
-use luya\cms\base\PhpBlock;
 use luya\bootstrap3\BaseBootstrap3Block;
 use luya\cms\frontend\blockgroups\MediaGroup;
 

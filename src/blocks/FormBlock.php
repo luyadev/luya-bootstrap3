@@ -6,7 +6,6 @@ use Yii;
 use yii\helpers\Html;
 use luya\helpers\Url;
 use luya\bootstrap3\Module;
-use luya\cms\base\PhpBlock;
 use luya\bootstrap3\BaseBootstrap3Block;
 use luya\bootstrap3\blockgroups\Bootstrap3Group;
 

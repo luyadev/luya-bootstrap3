@@ -3,7 +3,6 @@
 namespace luya\bootstrap3\blocks;
 
 use luya\bootstrap3\Module;
-use luya\cms\base\PhpBlock;
 use luya\cms\injectors\LinkInjector;
 use luya\bootstrap3\BaseBootstrap3Block;
 use luya\bootstrap3\blockgroups\Bootstrap3Group;

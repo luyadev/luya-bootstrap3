@@ -6,7 +6,6 @@ use Yii;
 use luya\bootstrap3\Module;
 use luya\TagParser;
 use luya\cms\helpers\BlockHelper;
-use luya\cms\base\PhpBlock;
 use luya\web\WebsiteLink;
 use luya\bootstrap3\BaseBootstrap3Block;
 use luya\cms\frontend\blockgroups\MediaGroup;

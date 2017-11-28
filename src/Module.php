@@ -5,10 +5,7 @@ namespace luya\bootstrap3;
 use Yii;
 
 /**
- * Bootstrap4 Module
- *
- * When adding this module to your configuration the bootstrap4 block will be added to your
- * cmsadministration by running the `import` command.
+ * Bootstrap 3 Module.
  *
  * @author Basil Suter <basil@nadar.io>
  */
