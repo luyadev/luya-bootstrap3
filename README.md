@@ -9,8 +9,14 @@
 [![Total Downloads](https://poser.pugx.org/luyadev/luya-bootstrap3/downloads)](https://packagist.org/packages/luyadev/luya-bootstrap3)
 [![Slack Support](https://img.shields.io/badge/Slack-luyadev-yellowgreen.svg)](https://slack.luya.io/)
 
-Bootstrap 3 related content.
+Bootstrap 3 related content:
 
 + blocks
-+ widgets
-+ ...
+
+## Installation
+
+For the installation of modules Composer is required.
+
+```sh
+composer require luyadev/luya-bootstrap3:~1.0.0
+```
