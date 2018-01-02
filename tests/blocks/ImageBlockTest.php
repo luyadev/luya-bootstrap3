@@ -8,6 +8,13 @@ class ImageBlockTest extends Bootstrap3BlockTestCase
 {
     public $blockClass = 'luya\bootstrap3\blocks\ImageBlock';
     
+    public function testTranslation()
+    {
+        $this->assertSame('Image', $this->block->name());
+        $this->app->language = 'de';
+        $this->assertSame('Bild', $this->block->name());
+    }
+    
     public function testRenderEmpty()
     {
         $this->assertSame('', $this->renderFrontend());

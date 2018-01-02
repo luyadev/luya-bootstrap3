@@ -17,9 +17,7 @@ class Module extends \luya\base\Module
     public static function onLoad()
     {
         self::registerTranslation('bootstrap3*', static::staticBasePath() . '/messages', [
-            'fileMap' => [
-                'bootstrap3' => 'bootstrap3.php',
-            ],
+            'bootstrap3' => 'bootstrap3.php',
         ]);
     }
     
