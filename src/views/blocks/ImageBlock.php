@@ -5,7 +5,7 @@ use yii\helpers\Html;
  * @var $this \luya\cms\base\PhpBlockView
  */
 ?>
-<?php if ($this->extraValue('image')): ?>
+<?php if ($this->extraValue('image')): $imageCaption = $this->extraValue('image')['caption']; ?>
 <div class="image<?= $this->cfgValue('divCssClass', null, ' {{divCssClass}}'); ?>">
 	<figure>
 		<?php if ($this->extraValue('link')): ?>
@@ -13,8 +13,8 @@ use yii\helpers\Html;
 		<?php endif; ?>
 		<?= Html::tag('img', '', [
             'src' => $this->extraValue('image')['source'],
-            'alt' => $this->varValue('caption', ''),
-            'title' => $this->varValue('caption', null),
+		    'alt' => $this->varValue('caption', $imageCaption === null ? '' : $imageCaption), // as an image without alt tag is not w3c conform
+		    'title' => $this->varValue('caption', $imageCaption),
             'width' => $this->cfgValue('width', null),
             'height' => $this->cfgValue('height', null),
             'class' => 'img-responsive' . $this->cfgValue('cssClass', null, ' {{cssClass}}'),
