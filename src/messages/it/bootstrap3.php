@@ -93,8 +93,8 @@ return [
     'block_layout_row_column_css_class' => 'Classe CSS per il div layout',
     'block_image_cfg_css_class' => 'Classe CSS per le immagini',
     'block_cfg_additonal_css_class' => 'Classe CSS',
-		
-	// rc3
+        
+    // rc3
     'block_spacing_small_space' => 'Small space',
     'block_spacing_medium_space' => 'Medium space',
     'block_spacing_large_space' => 'Large space',

@@ -97,5 +97,5 @@ return [
     // rc3
     'block_spacing_small_space' => 'Маленькое пробел',
     'block_spacing_medium_space' => 'Середний пробел',
-    'block_spacing_large_space' => 'Большой пробел',  
+    'block_spacing_large_space' => 'Большой пробел',
 ];

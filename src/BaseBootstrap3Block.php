@@ -6,7 +6,7 @@ use luya\cms\base\PhpBlock;
 
 /**
  * Base Block for alle BS3 Blocks.
- * 
+ *
  * @author Basil Suter <basil@nadar.io>
  */
 abstract class BaseBootstrap3Block extends PhpBlock

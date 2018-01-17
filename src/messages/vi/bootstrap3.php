@@ -61,7 +61,7 @@ return [
     'block_map_maptype_roadmap' => 'Bản đồ đường',
     'block_map_maptype_satellitemap' => 'Bản đồ vệ tinh',
     'block_map_maptype_hybrid' => 'Sử dụng bản đồ vệ tinh',
-	'block_map_no_content' => 'Chưa cung cấp địa chỉ.',
+    'block_map_no_content' => 'Chưa cung cấp địa chỉ.',
     'block_spacing_name' => 'Khoảng cách',
     'block_spacing_spacing_label' =>'Khoảng cách',
     'block_table_name' => 'Bảng',
@@ -94,8 +94,8 @@ return [
     'block_image_cfg_css_class' => 'Các lớp CSS cho hình ảnh',
     'block_cfg_additonal_css_class' => 'Các lớp css', // this is not block related and can be ussed in all blocks.
     
-	// rc3	
-	'block_spacing_small_space' => 'Cách nhỏ',
+    // rc3
+    'block_spacing_small_space' => 'Cách nhỏ',
     'block_spacing_medium_space' => 'Cách vừa',
     'block_spacing_large_space' => 'Cách rộng',
 ];

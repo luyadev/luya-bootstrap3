@@ -94,7 +94,7 @@ return [
     'block_image_cfg_css_class' => 'Classes CSS para a imagem',
     'block_cfg_additonal_css_class' => 'Classes CSS', // this is not block related and can be ussed in all blocks.
     
-	// rc3
+    // rc3
     'block_spacing_small_space' => 'Espaço pequeno',
     'block_spacing_medium_space' => 'Espaço médio',
     'block_spacing_large_space' => 'Espaço grande',
