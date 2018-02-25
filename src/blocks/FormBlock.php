@@ -61,10 +61,10 @@ final class FormBlock extends BaseBootstrap3Block
         return [
             'vars' => [
                 ['var' => 'emailAddress', 'label' => 'Email will be sent to the following address', 'type' => 'zaa-text'],
-                ['var' => 'headline', 'label' => 'Heading', 'type' => 'zaa-text', 'placeholder' => 'Kontakt'],
+                ['var' => 'headline', 'label' => 'Heading', 'type' => 'zaa-text', 'placeholder' => 'Contact'],
                 ['var' => 'nameLabel', 'label' => 'Text for field "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNameLabel],
                 ['var' => 'emailLabel', 'label' => 'Text for field "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailLabel],
-                ['var' => 'messageLabel', 'label' => 'Text for field "Nachricht"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageLabel],
+                ['var' => 'messageLabel', 'label' => 'Text for field "Message"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageLabel],
                 ['var' => 'sendLabel', 'label' => 'Text on the submit button', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendLabel],
             ],
 
@@ -74,7 +74,7 @@ final class FormBlock extends BaseBootstrap3Block
                 ['var' => 'emailPlaceholder', 'label' => 'Placeholder in the field "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailPlaceholder],
                 ['var' => 'nameError', 'label' => 'Error message for field "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNameError],
                 ['var' => 'emailError', 'label' => 'Error message for field "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailError],
-                ['var' => 'messageError', 'label' => 'Error message for field "Nachricht"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageError],
+                ['var' => 'messageError', 'label' => 'Error message for field "Message"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageError],
                 ['var' => 'sendSuccess', 'label' => 'Confirmation text after submitting the form', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendSuccess],
                 ['var' => 'sendError', 'label' => 'Error text after failed attempt to send the form', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendError],
             ],
