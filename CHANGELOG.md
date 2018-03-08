@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. This projec
 
 ## 1.0.2 (in progress)
 
++ [#4](https://github.com/luyadev/luya-bootstrap3/pull/4) Translated FormBlock from German to English
+
 ## 1.0.1 (17. January 2018)
 
 + [#3](https://github.com/luyadev/luya-bootstrap3/issues/3) Add alt and title from image caption.

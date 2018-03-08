@@ -19,27 +19,27 @@ final class FormBlock extends BaseBootstrap3Block
 {
     public $defaultNameLabel = 'Name';
     
-    public $defaultNamePlaceholder = 'Vor- und Nachname';
+    public $defaultNamePlaceholder = 'First and Last Name';
     
-    public $defaultNameError = 'Bitte geben Sie einen Namen ein';
+    public $defaultNameError = 'Please enter a name';
 
     public $defaultEmailLabel = 'Email';
     
     public $defaultEmailPlaceholder = 'beispiel@beispiel.ch';
     
-    public $defaultEmailError = 'Bitte geben Sie eine Emailadresse ein';
+    public $defaultEmailError = 'Please enter an email address';
 
-    public $defaultMessageLabel = 'Nachricht';
+    public $defaultMessageLabel = 'Message';
     
-    public $defaultMessageError = 'Bitte geben Sie eine Nachricht ein';
+    public $defaultMessageError = 'Please enter a message';
 
-    public $defaultSendLabel = 'Absenden';
+    public $defaultSendLabel = 'Send';
 
-    public $defaultSendError = 'Leider ist ein Fehler beim Senden der Nachricht aufgetreten.';
+    public $defaultSendError = 'Sorry, an error occurred while sending the message.';
 
-    public $defaultSendSuccess = 'Vielen Dank! Wir werden uns mit Ihnen in Verbindung setzen.';
+    public $defaultSendSuccess = 'Many thanks! We will get in touch with you.';
 
-    public $defaultMailSubject = 'Kontaktanfrage';
+    public $defaultMailSubject = 'Contact Inquiry';
     
     public function blockGroup()
     {
@@ -60,23 +60,23 @@ final class FormBlock extends BaseBootstrap3Block
     {
         return [
             'vars' => [
-                ['var' => 'emailAddress', 'label' => 'Email wird an folgende Adresse gesendet', 'type' => 'zaa-text'],
-                ['var' => 'headline', 'label' => 'Überschrift', 'type' => 'zaa-text', 'placeholder' => 'Kontakt'],
-                ['var' => 'nameLabel', 'label' => 'Text für Feld "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNameLabel],
-                ['var' => 'emailLabel', 'label' => 'Text für Feld "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailLabel],
-                ['var' => 'messageLabel', 'label' => 'Text für Feld "Nachricht"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageLabel],
-                ['var' => 'sendLabel', 'label' => 'Text auf dem Absendebutton', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendLabel],
+                ['var' => 'emailAddress', 'label' => 'Email will be sent to the following address', 'type' => 'zaa-text'],
+                ['var' => 'headline', 'label' => 'Heading', 'type' => 'zaa-text', 'placeholder' => 'Contact'],
+                ['var' => 'nameLabel', 'label' => 'Text for field "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNameLabel],
+                ['var' => 'emailLabel', 'label' => 'Text for field "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailLabel],
+                ['var' => 'messageLabel', 'label' => 'Text for field "Message"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageLabel],
+                ['var' => 'sendLabel', 'label' => 'Text on the submit button', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendLabel],
             ],
 
             'cfgs' => [
-                ['var' => 'subjectText', 'label' => 'Betreff in der Email', 'type' => 'zaa-text', 'placeholder' => $this->defaultMailSubject],
-                ['var' => 'namePlaceholder', 'label' => 'Platzhalter im Feld "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNamePlaceholder],
-                ['var' => 'emailPlaceholder', 'label' => 'Platzhalter im Feld "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailPlaceholder],
-                ['var' => 'nameError', 'label' => 'Fehlermeldung für Feld "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNameError],
-                ['var' => 'emailError', 'label' => 'Fehlermeldung für Feld "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailError],
-                ['var' => 'messageError', 'label' => 'Fehlermeldung für Feld "Nachricht"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageError],
-                ['var' => 'sendSuccess', 'label' => 'Bestätigungstext nach Absenden des Formulars', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendSuccess],
-                ['var' => 'sendError', 'label' => 'Fehlertext nach fehlgeschlagenem Sendeversuch des Formulars', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendError],
+                ['var' => 'subjectText', 'label' => 'Subject in the email', 'type' => 'zaa-text', 'placeholder' => $this->defaultMailSubject],
+                ['var' => 'namePlaceholder', 'label' => 'Placeholder in the field "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNamePlaceholder],
+                ['var' => 'emailPlaceholder', 'label' => 'Placeholder in the field "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailPlaceholder],
+                ['var' => 'nameError', 'label' => 'Error message for field "Name"', 'type' => 'zaa-text', 'placeholder' => $this->defaultNameError],
+                ['var' => 'emailError', 'label' => 'Error message for field "Email"', 'type' => 'zaa-text', 'placeholder' => $this->defaultEmailError],
+                ['var' => 'messageError', 'label' => 'Error message for field "Message"', 'type' => 'zaa-text', 'placeholder' => $this->defaultMessageError],
+                ['var' => 'sendSuccess', 'label' => 'Confirmation text after submitting the form', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendSuccess],
+                ['var' => 'sendError', 'label' => 'Error text after failed attempt to send the form', 'type' => 'zaa-text', 'placeholder' => $this->defaultSendError],
             ],
         ];
     }
@@ -157,7 +157,7 @@ final class FormBlock extends BaseBootstrap3Block
                         '<div class="input__field-wrapper"><textarea class="input__field" disabled="disabled" /></div>'.
                         '</div>'.
                         '<button class="btn" disabled>{{ extras.sendLabel }}</button>'.
-                    '{% else %}<span class="block__empty-text">Es wurde noch keine Emailadresse angegeben.</span>'.
+                    '{% else %}<span class="block__empty-text">There is no email address yet</span>'.
                 '{% endif %}';
     }
 }
