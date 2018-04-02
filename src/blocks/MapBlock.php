@@ -2,6 +2,7 @@
 
 namespace luya\bootstrap3\blocks;
 
+use Yii;
 use luya\bootstrap3\Module;
 use luya\bootstrap3\BaseBootstrap3Block;
 use luya\bootstrap3\blockgroups\Bootstrap3Group;
