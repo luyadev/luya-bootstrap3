@@ -124,6 +124,15 @@ final class MapBlock extends BaseBootstrap3Block
      */
     public function admin()
     {
-        return '{% if vars.address is not empty %}<div class="iframe-container"><iframe src="{% if cfgs.snazzymapsUrl %}{{ cfgs.snazzymapsUrl }}{% else %}http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q={{ extras.address }}&z={{ extras.zoom }}&t={{ extras.maptype }}&output=embed{% endif %}"></iframe></div>{% else %}<span class="block__empty-text">' . Module::t('block_map_no_content') . '</span>{% endif %}';
+        $language = Yii::$app->composition['langShortCode'];
+        return <<<EOT
+          {% if vars.address is not empty %}
+            <div class="iframe-container">
+              <iframe src="{% if cfgs.snazzymapsUrl %}{{ cfgs.snazzymapsUrl }}{% else %}http://maps.google.com/maps?f=q&source=s_q&hl={$language}&geocode=&q={{ extras.address }}&z={{ extras.zoom }}&t={{ extras.maptype }}&output=embed{% endif %}"></iframe>
+            </div>
+          {% else %}
+            <span class="block__empty-text">' . Module::t('block_map_no_content') . '</span>
+          {% endif %}
+EOT;
     }
 }
