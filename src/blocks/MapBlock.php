@@ -124,12 +124,12 @@ final class MapBlock extends BaseBootstrap3Block
      */
     public function generateEmbedUrl()
     {
-        if (empty($this->getVarValue('address'))) {
-            return false;
-        }
-        
         if (($snazzymapsUrl = $this->getCfgValue('snazzymapsUrl'))) {
             return $snazzymapsUrl;
+        }
+        
+        if (empty($this->getVarValue('address'))) {
+            return false;
         }
         
         $params = [

@@ -28,4 +28,11 @@ class MapBlockTest extends Bootstrap3BlockTestCase
     
         $this->assertSame('<div class="iframe-container"><iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&q=Mountain+View%2C+California%2C+United+States&z=1&t=k&output=embed"></iframe></div>', $this->renderAdminNoSpace());
     }
+    
+    public function testSnazzyMaps()
+    {
+        $this->block->setCfgValues(['snazzymapsUrl' => 'https://snazzymaps.com']);
+        
+        $this->assertContains('src="https://snazzymaps.com"', $this->renderFrontendNoSpace());
+    }
 }
