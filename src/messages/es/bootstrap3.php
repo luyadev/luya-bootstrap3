@@ -98,4 +98,8 @@ return [
       'block_spacing_small_space' => 'Espacio pequeño',
       'block_spacing_medium_space' => 'Espacio medio',
       'block_spacing_large_space' => 'Gran espacio',
+    
+      // 1.0.2
+    'block_map_snazzymapsUrl_label' => 'Snazzy Maps iFrame URL',
+    'block_map_snazzymapsUrl_help' => 'The Snazzy Maps iFrame URL, will overwrite all other setings and display the configured Snazzy Map.',
 ];

@@ -114,10 +114,35 @@ final class MapBlock extends BaseBootstrap3Block
     public function extraVars()
     {
         return [
-            'address' => urlencode($this->getVarValue('address', 'Zephir Software Design AG, Tramstrasse 66, Münchenstein')),
-            'zoom' => $this->getVarValue('zoom', 15),
-            'maptype' => $this->getVarValue('maptype', 'h'),
+            'embedUrl' => $this->generateEmbedUrl(),
         ];
+    }
+
+    /**
+     * Generate the embed url based on localisation or whether its snazzy or not.
+     * @since 1.0.2
+     */
+    public function generateEmbedUrl()
+    {
+        if (empty($this->getVarValue('address'))) {
+            return false;
+        }
+        
+        if (($snazzymapsUrl = $this->getCfgValue('snazzymapsUrl'))) {
+            return $snazzymapsUrl;
+        }
+        
+        $params = [
+            'f' => 'q',
+            'source' => 's_q',
+            'hl' => Yii::$app->composition->langShortCode,
+            'q' => $this->getVarValue('address', 'Zephir Software Design AG, Tramstrasse 66, Münchenstein'),
+            'z' => $this->getVarValue('zoom', 15),
+            't' => $this->getVarValue('maptype', 'h'),
+            'output' => 'embed',
+        ];
+        
+        return 'https://maps.google.com/maps?' . http_build_query($params, null, '&', PHP_QUERY_RFC1738);
     }
 
     /**
@@ -125,15 +150,6 @@ final class MapBlock extends BaseBootstrap3Block
      */
     public function admin()
     {
-        $language = Yii::$app->composition['langShortCode'];
-        return <<<EOT
-          {% if vars.address is not empty %}
-            <div class="iframe-container">
-              <iframe src="{% if cfgs.snazzymapsUrl %}{{ cfgs.snazzymapsUrl }}{% else %}http://maps.google.com/maps?f=q&source=s_q&hl={$language}&geocode=&q={{ extras.address }}&z={{ extras.zoom }}&t={{ extras.maptype }}&output=embed{% endif %}"></iframe>
-            </div>
-          {% else %}
-            <span class="block__empty-text">' . Module::t('block_map_no_content') . '</span>
-          {% endif %}
-EOT;
+        return '{% if vars.address is not empty %}<div class="iframe-container"><iframe src="{{extras.embedUrl | raw}}"></iframe></div>{% else %}<span class="block__empty-text">' . Module::t('block_map_no_content') . '</span>{% endif %}';
     }
 }
