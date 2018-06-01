@@ -56,9 +56,9 @@ final class ImageBlock extends BaseBootstrap3Block
             'vars' => [
                 ['var' => 'imageId', 'label' => Module::t('block_image_imageid_label'), 'type' => 'zaa-image-upload'],
                 ['var' => 'caption', 'label' => Module::t('block_image_caption_label'), 'type' => 'zaa-textarea'],
-                ['var' => 'textType', 'label' => Module::t('block_text_texttype_label'), 'initvalue' => 0, 'type' => 'zaa-select', 'options' => [
-                        ['value' => 0, 'label' => Module::t('block_text_texttype_normal')],
-                        ['value' => 1, 'label' => Module::t('block_text_texttype_markdown')],
+                ['var' => 'textType', 'label' => Module::t('block_image_text_texttype_label'), 'initvalue' => 0, 'type' => 'zaa-select', 'options' => [
+                        ['value' => 0, 'label' => Module::t('block_image_text_texttype_normal')],
+                        ['value' => 1, 'label' => Module::t('block_image_text_texttype_markdown')],
                     ],
                 ],
             ],

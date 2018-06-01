@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. This projec
 
 ## 1.0.3 (in progress)
 
++ [#8](https://github.com/luyadev/luya-bootstrap3/issues/8) Fixed missing translation of image block labels.
+
 ## 1.0.2 (7. May 2018)
 
 + [#6](https://github.com/luyadev/luya-bootstrap3/pull/6) Embed maps use the composition localisation lang short code.
