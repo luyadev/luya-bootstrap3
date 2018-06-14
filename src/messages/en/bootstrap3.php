@@ -36,7 +36,7 @@ return [
     'block_image_text_targetblank_label' => 'Open link an a new window',
     'block_image_text_help_texttype' => 'The text type is referring to the text and not the heading.',
     'block_image_text_no_image' => 'No image has been uploaded yet.',
-    'block_image_text_no_text' => 'No text has been insereted yet.',
+    'block_image_text_no_text' => 'No text has been inserted yet.',
     'block_layout_name' => 'Layout',
     'block_layout_width_label' => 'Size of the first column (max 12)',
     'block_layout_placeholders_left' => 'Left',
@@ -101,5 +101,5 @@ return [
 
     // 1.0.2
     'block_map_snazzymapsUrl_label' => 'Snazzy Maps iFrame URL',
-    'block_map_snazzymapsUrl_help' => 'The Snazzy Maps iFrame URL, will overwrite all other setings and display the configured Snazzy Map.',
+    'block_map_snazzymapsUrl_help' => 'The Snazzy Maps iFrame URL, will overwrite all other settings and display the configured Snazzy Map.',
 ];
