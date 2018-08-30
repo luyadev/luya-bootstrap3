@@ -14,6 +14,7 @@ use yii\helpers\Html;
                 'title' => $imageCaption,
                 'width' => $this->cfgValue('width', null),
                 'height' => $this->cfgValue('height', null),
+                'style' => (($this->varValue('imagePosition', 'left') == 'left') ? "margin-right:{$this->cfgValue('margin', '20px')}" : "margin-left:{$this->cfgValue('margin', '20px')}") . $this->cfgValue('margin', '20px', ';margin-bottom:{{margin}};'),
             ]) ?>
         </div>
 
