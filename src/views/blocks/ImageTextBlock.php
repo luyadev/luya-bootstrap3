@@ -6,16 +6,18 @@ use yii\helpers\Html;
  */
 ?>
 <?php if ($this->extraValue('image') && $this->extraValue('text')): $imageCaption = $this->extraValue('image')['caption'];?>
-    <div>
-        <?= Html::img($this->extraValue('image')['source'], [
-            'class' => ($this->varValue('imagePosition', 'left') == 'left') ? 'pull-left img-responsive' : 'pull-right img-responsive',
-            'alt' => $imageCaption === null ? '' : $imageCaption,
-            'title' => $imageCaption,
-            'width' => $this->cfgValue('width', null),
-            'height' => $this->cfgValue('height', null),
-            'style' => (($this->varValue('imagePosition', 'left') == 'left') ? "margin-right:{$this->cfgValue('margin', '20px')}" : "margin-left:{$this->cfgValue('margin', '20px')}") . $this->cfgValue('margin', '20px', ';margin-bottom:{{margin}};max-width:50%;'),
-        ])?>
-        <div>
+    <div class="media">
+        <div class="<?php echo ($this->varValue('imagePosition', 'left') == 'left') ? 'media-left pull-left' : 'media-right pull-right' ?>">
+            <?= Html::img($this->extraValue('image')['source'], [
+                'class' => 'media-object',
+                'alt' => $imageCaption === null ? '' : $imageCaption,
+                'title' => $imageCaption,
+                'width' => $this->cfgValue('width', null),
+                'height' => $this->cfgValue('height', null),
+            ]) ?>
+        </div>
+
+        <div class="media-body">
             <?= $this->extraValue('text'); ?>
             <?php if ($this->cfgValue('btnHref') && $this->cfgValue('btnLabel')): ?>
                 <br>
@@ -26,5 +28,4 @@ use yii\helpers\Html;
             <?php endif; ?>
         </div>
     </div>
-    <div style="clear:both"></div>
 <?php endif; ?>
