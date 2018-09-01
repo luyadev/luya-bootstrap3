@@ -11,7 +11,7 @@ $text = $this->extraValue('text');
 <?php if ($image && $text): ?>
     <?php $imageCaption = $image['caption']; ?>
 
-    <div class="media">
+    <div class="media clearfix">
         <div class="<?php echo ($this->varValue('imagePosition', 'left') == 'left') ? 'media-left pull-left' : 'media-right pull-right' ?>">
             <?= Html::img($image['source'], [
                 'class' => 'media-object',
