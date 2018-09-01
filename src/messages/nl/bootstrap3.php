@@ -100,4 +100,7 @@ return [
     // 1.0.2
     'block_map_snazzymapsUrl_label' => 'Snazzy Maps iFrame URL',
     'block_map_snazzymapsUrl_help' => 'De iRoom- URL van Snazzy Maps overschrijft alle andere instellingen en geeft de geconfigureerde Snazzy Map weer.',
+
+    // 1.0.4
+    'block_image_text_btnclass_label' => 'Button CSS class',
 ];

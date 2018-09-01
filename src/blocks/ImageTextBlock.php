@@ -77,6 +77,7 @@ final class ImageTextBlock extends BaseBootstrap3Block
                 ],
                 ['var' => 'btnLabel', 'label' => Module::t('block_image_text_btnlabel_label'), 'type' => 'zaa-text'],
                 ['var' => 'btnHref', 'label' => Module::t('block_image_text_btnhref_label'), 'type' => 'zaa-text'],
+                ['var' => 'btnClass', 'label' => Module::t('block_image_text_btnclass_label'), 'type' => 'zaa-text'],
                 ['var' => 'targetBlank', 'label' => Module::t('block_image_text_targetblank_label'), 'type' => 'zaa-checkbox'],
                 ['var' => 'width', 'label' => Module::t('block_image_fixed_width'), 'type' => 'zaa-text'],
                 ['var' => 'height', 'label' => Module::t('block_image_fixed_height'), 'type' => 'zaa-text'],
@@ -110,6 +111,13 @@ final class ImageTextBlock extends BaseBootstrap3Block
         return empty($text) ? null : '<p>' . nl2br($text) . '</p>';
     }
 
+    public function getImagePosition()
+    {
+        return ($this->getVarValue('imagePosition', 'left') == 'left')
+            ? "margin-right:{$this->getCfgValue('margin', '20px')}"
+            : "margin-left:{$this->getCfgValue('margin', '20px')}";
+    }
+
     /**
      * @inheritdoc
      */
@@ -118,6 +126,7 @@ final class ImageTextBlock extends BaseBootstrap3Block
         return [
             'image' => BlockHelper::imageUpload($this->getVarValue('imageId')),
             'text' => $this->getText(),
+            'imagePosition' => $this->getImagePosition(),
         ];
     }
 

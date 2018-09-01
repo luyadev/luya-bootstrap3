@@ -102,4 +102,7 @@ return [
     // 1.0.2
     'block_map_snazzymapsUrl_label' => 'URL de l\'iframe Snazzy Maps',
     'block_map_snazzymapsUrl_help' => 'L\'URL de l\'iframe Snazzy Maps écrasera tous les autres paramètres et affichera la Snazzy Map telle que configurée.',
+
+    // 1.0.4
+    'block_image_text_btnclass_label' => 'Button CSS class',
 ];
