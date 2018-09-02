@@ -102,4 +102,7 @@ return [
     // 1.0.2
     'block_map_snazzymapsUrl_label' => 'Snazzy Haritaları iFrame URL',
     'block_map_snazzymapsUrl_help' => 'Snazzy Haritaları iFrame URL\'si, diğer tüm ayarların üzerine yazacak ve yapılandırılmış Snazzy haritaları görüntüleyecek.',
+
+    // 1.0.4
+    'block_image_text_btnclass_label' => 'Button CSS class',
 ];
