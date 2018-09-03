@@ -18,7 +18,7 @@ class ImageTextBlockTest extends Bootstrap3BlockTestCase
         $this->block->setVarValues(['text' => 'Text']);
         $this->block->addExtraVar('image', ['source' => 'image.jpg', 'caption' => null]);
         
-        $this->assertSame('<div><img class="pull-left img-responsive" src="image.jpg" alt="" style="margin-right:20px;margin-bottom:20px;max-width:50%;"><div><p>Text</p></div></div><div style="clear:both"></div>', $this->renderFrontendNoSpace());
+        $this->assertSame('<div class="media clearfix"><div class="media-left pull-left"><img class="media-object" src="image.jpg" alt="" style="margin-right:20px;margin-bottom:20px;"></div><div class="media-body"><p>Text</p></div></div>', $this->renderFrontendNoSpace());
     }
     
     public function testImageCaption()
@@ -26,7 +26,7 @@ class ImageTextBlockTest extends Bootstrap3BlockTestCase
         $this->block->setVarValues(['text' => 'Text']);
         $this->block->addExtraVar('image', ['source' => 'image.jpg', 'caption' => 'foobar']);
         
-        $this->assertSame('<div><img class="pull-left img-responsive" src="image.jpg" alt="foobar" title="foobar" style="margin-right:20px;margin-bottom:20px;max-width:50%;"><div><p>Text</p></div></div><div style="clear:both"></div>', $this->renderFrontendNoSpace());
+        $this->assertSame('<div class="media clearfix"><div class="media-left pull-left"><img class="media-object" src="image.jpg" alt="foobar" title="foobar" style="margin-right:20px;margin-bottom:20px;"></div><div class="media-body"><p>Text</p></div></div>', $this->renderFrontendNoSpace());
     }
     
     public function testButton()
@@ -35,7 +35,7 @@ class ImageTextBlockTest extends Bootstrap3BlockTestCase
         $this->block->setCfgValues(['btnHref' => 'https://luya.io', 'btnLabel' => 'Button']);
         $this->block->addExtraVar('image', ['source' => 'image.jpg', 'caption' => null]);
     
-        $this->assertSame('<div><img class="pull-left img-responsive" src="image.jpg" alt="" style="margin-right:20px;margin-bottom:20px;max-width:50%;"><div><p>Text</p><br><a class="button" href="https://luya.io">Button</a></div></div><div style="clear:both"></div>', $this->renderFrontendNoSpace());
+        $this->assertSame('<div class="media clearfix"><div class="media-left pull-left"><img class="media-object" src="image.jpg" alt="" style="margin-right:20px;margin-bottom:20px;"></div><div class="media-body"><p>Text</p><br><a class="button" href="https://luya.io">Button</a></div></div>', $this->renderFrontendNoSpace());
     }
     
     public function testButtonTargetBlank()
@@ -44,7 +44,7 @@ class ImageTextBlockTest extends Bootstrap3BlockTestCase
         $this->block->setCfgValues(['btnHref' => 'https://luya.io', 'btnLabel' => 'Button', 'targetBlank' => 1]);
         $this->block->addExtraVar('image', ['source' => 'image.jpg', 'caption' => null]);
     
-        $this->assertSame('<div><img class="pull-left img-responsive" src="image.jpg" alt="" style="margin-right:20px;margin-bottom:20px;max-width:50%;"><div><p>Text</p><br><a class="button" href="https://luya.io" target="_blank">Button</a></div></div><div style="clear:both"></div>', $this->renderFrontendNoSpace());
+        $this->assertSame('<div class="media clearfix"><div class="media-left pull-left"><img class="media-object" src="image.jpg" alt="" style="margin-right:20px;margin-bottom:20px;"></div><div class="media-body"><p>Text</p><br><a class="button" href="https://luya.io" target="_blank">Button</a></div></div>', $this->renderFrontendNoSpace());
     }
     
     public function testWidthHeight()
@@ -53,6 +53,6 @@ class ImageTextBlockTest extends Bootstrap3BlockTestCase
         $this->block->setCfgValues(['width' => 100, 'height' => 100]);
         $this->block->addExtraVar('image', ['source' => 'image.jpg', 'caption' => null]);
     
-        $this->assertSame('<div><img class="pull-left img-responsive" src="image.jpg" width="100" height="100" alt="" style="margin-right:20px;margin-bottom:20px;max-width:50%;"><div><p>Text</p></div></div><div style="clear:both"></div>', $this->renderFrontendNoSpace());
+        $this->assertSame('<div class="media clearfix"><div class="media-left pull-left"><img class="media-object" src="image.jpg" width="100" height="100" alt="" style="margin-right:20px;margin-bottom:20px;"></div><div class="media-body"><p>Text</p></div></div>', $this->renderFrontendNoSpace());
     }
 }
