@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. This project make usage of the [Yii Versioning Strategy](https://github.com/yiisoft/yii2/blob/master/docs/internals/versions.md). In order to read more about upgrading and BC breaks have a look at the [UPGRADE Document](UPGRADE.md).
 
+## 1.0.4 (4. September 2018)
+
++ [#17](https://github.com/luyadev/luya-bootstrap3/issues/17) Updated to bootstrap 3 media text for image text block.
++ [#11](https://github.com/luyadev/luya-bootstrap3/issues/11) Turkish added
++ [#15](https://github.com/luyadev/luya-bootstrap3/issues/18) Dutch added
++ [#9](https://github.com/luyadev/luya-bootstrap3/issues/9) French update
+
 ## 1.0.3 (1. June 2018)
 
 + [#8](https://github.com/luyadev/luya-bootstrap3/issues/8) Fixed missing translation of image block labels.
