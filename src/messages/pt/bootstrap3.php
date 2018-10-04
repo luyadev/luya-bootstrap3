@@ -100,9 +100,9 @@ return [
     'block_spacing_large_space' => 'Espaço grande',
     
     // 1.0.2
-    'block_map_snazzymapsUrl_label' => 'Snazzy Maps iFrame URL',
-    'block_map_snazzymapsUrl_help' => 'The Snazzy Maps iFrame URL, will overwrite all other setings and display the configured Snazzy Map.',
+    'block_map_snazzymapsUrl_label' => 'URL do iFrame Snazzy Maps',
+    'block_map_snazzymapsUrl_help' => 'A URL do iFrame do Snazzy Maps sobrescreverá todas as outras configurações e exibirá o Snazzy Map configurado.',
 
     // 1.0.4
-    'block_image_text_btnclass_label' => 'Button CSS class',
+    'block_image_text_btnclass_label' => 'Classe CSS do Botão',
 ];
