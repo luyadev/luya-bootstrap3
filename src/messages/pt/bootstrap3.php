@@ -105,4 +105,9 @@ return [
 
     // 1.0.4
     'block_image_text_btnclass_label' => 'Classe CSS do Botão',
+	'block_dynamic_layout_name' => 'Dynamic Layout',
+	'block_dynamic_layout_placeholders_column' => 'Column {number}',
+	'block_dynamic_layout_width_label' => 'Size of the {number} column (max {max})',
+	'block_dynamic_layout_left_column_count' => 'Number of columns',
+	'block_dynamic_layout_column_css_class' => 'CSS classes for {number} column',
 ];
