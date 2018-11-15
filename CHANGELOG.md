@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ## 1.0.5 (In progress)
 
-+ []() Added DynamicLayoutBlock
++ [22](https://github.com/luyadev/luya-bootstrap3/pull/22) Added DynamicLayoutBlock for multiple columns.
 
 ## 1.0.4 (4. September 2018)
 
