@@ -103,7 +103,7 @@ final class ImageBlock extends BaseBootstrap3Block
         }
         
         if ($this->getCfgValue('internalLink', false)) {
-            return Yii::$app->menu->find()->where(['nav_id' => $this->getCfgValue('internalLink')])->one();
+            return Yii::$app->menu->find()->where(['nav_id' => $this->getCfgValue('internalLink')])->with(['hidden'])->one();
         }
         
         return false;
