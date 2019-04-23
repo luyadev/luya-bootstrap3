@@ -20,5 +20,5 @@ Bootstrap 3 related content:
 For the installation of modules Composer is required.
 
 ```sh
-composer require luyadev/luya-bootstrap3:~1.0.0
+composer require luyadev/luya-bootstrap3
 ```
