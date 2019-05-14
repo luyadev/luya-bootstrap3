@@ -35,4 +35,15 @@ class MapBlockTest extends Bootstrap3BlockTestCase
         
         $this->assertContains('src="https://snazzymaps.com"', $this->renderFrontendNoSpace());
     }
+
+    public function testApiKey()
+    {
+        $this->block->setVarValues(['address' => 'Mountain View, California, United States', 'zoom' => 1, 'maptype' => 'k']);
+        $this->block->setCfgValues(['mapsKey' => '123']);
+    
+        $this->assertContains('<iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&q=Mountain+View%2C+California%2C+United+States&z=1&t=k&output=embed&key=123" width="600" height="450" frameborder="0" style="border:0"></iframe>', $this->renderFrontendNoSpace());
+    
+        $this->assertSame('<div class="iframe-container"><iframe src="https://maps.google.com/maps?f=q&source=s_q&hl=en&q=Mountain+View%2C+California%2C+United+States&z=1&t=k&output=embed&key=123"></iframe></div>', $this->renderAdminNoSpace());
+
+    }
 }

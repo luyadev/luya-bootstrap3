@@ -104,4 +104,9 @@ return [
 
     // 1.0.4
     'block_image_text_btnclass_label' => 'Button CSS class',
+
+    // 1.0.6
+    'block_map_api_key' => 'Maps API Key',
+    'block_map_api_key_help' => 'Since latest versions its recommend to provide a Google Maps API Key (https://developers.google.com/maps/documentation/embed/get-api-key)',
+
 ];

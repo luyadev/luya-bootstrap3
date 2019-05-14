@@ -96,7 +96,8 @@ final class MapBlock extends BaseBootstrap3Block
                 ],
             ],
             'cfgs' => [
-                ['var' => 'snazzymapsUrl', 'label' => Module::t('block_map_snazzymapsUrl_label'), 'type' => self::TYPE_TEXT]
+                ['var' => 'snazzymapsUrl', 'label' => Module::t('block_map_snazzymapsUrl_label'), 'type' => self::TYPE_TEXT],
+                ['var' => 'mapsKey', 'label' => Module::t('block_map_api_key'), 'type' => self::TYPE_TEXT],
             ]
         ];
     }
@@ -105,6 +106,7 @@ final class MapBlock extends BaseBootstrap3Block
     {
         return [
             'snazzymapsUrl' => Module::t('block_map_snazzymapsUrl_help'),
+            'mapsKey' => Module::t('block_map_api_key_help'),
         ];
     }
 
@@ -140,9 +142,10 @@ final class MapBlock extends BaseBootstrap3Block
             'z' => $this->getVarValue('zoom', 15),
             't' => $this->getVarValue('maptype', 'h'),
             'output' => 'embed',
+            'key' => $this->getCfgValue('mapsKey'),
         ];
         
-        return 'https://maps.google.com/maps?' . http_build_query($params, null, '&', PHP_QUERY_RFC1738);
+        return 'https://maps.google.com/maps?' . http_build_query(array_filter($params), null, '&', PHP_QUERY_RFC1738);
     }
 
     /**
