@@ -107,7 +107,7 @@ return [
     'block_image_text_btnclass_label' => 'Classe CSS do Botão',
 
     // 1.0.6
-    'block_map_api_key' => 'Maps API Key',
-    'block_map_api_key_help' => 'Since latest versions its recommend to provide a Google Maps API Key (https://developers.google.com/maps/documentation/embed/get-api-key)',
+    'block_map_api_key' => 'Mapemaneto Chaves API',
+    'block_map_api_key_help' => 'Desde a última versão é recomendado forncer uma Chave Google Maps API (https://developers.google.com/maps/documentation/embed/get-api-key)',
 
 ];
