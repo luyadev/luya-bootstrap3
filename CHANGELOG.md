@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 In order to read more about upgrading and BC breaks have a look at the [UPGRADE Document](UPGRADE.md).
 
+## 1.0.9 (25. March 2021)
+
++ [#31](https://github.com/luyadev/luya-bootstrap3/pull/31) Added Bulgarian translations.
+
 ## 1.0.8 (25. February 2020)
 
 + New PT translations
