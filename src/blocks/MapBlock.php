@@ -145,7 +145,7 @@ final class MapBlock extends BaseBootstrap3Block
             'key' => $this->getCfgValue('mapsKey'),
         ];
         
-        return 'https://maps.google.com/maps?' . http_build_query(array_filter($params), null, '&', PHP_QUERY_RFC1738);
+        return 'https://maps.google.com/maps?' . http_build_query(array_filter($params), '', '&', PHP_QUERY_RFC1738);
     }
 
     /**
